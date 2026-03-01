@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {}
+            }
+        }
+    </script>
+</head>
+<body>
+  <button id="scrollToTop" class="fixed bottom-6 right-6 z-50 p-3 rounded-lg bg-green-500 text-black shadow-lg shadow-green-500/20 opacity-0 translate-y-10 transition-all duration-300 hover:bg-green-400">
+  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+  </svg>
+</button>
+   </body>
+</html>
+
+<div class="w-screen h-full overflow-y-scroll bg-[#0a0a0a]">
+  <div
+    class="xl:w-[70%] lg:w-[80%] md:w-[90%] mx-auto relative md:px-0 px-4 md:my-10 bg-[#111111] rounded-xl overflow-hidden">
+    <!-- Nav -->
+    <nav class="bg-[#111111] shadow-lg w-full z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <a href="#" class="lg:text-xl md:text-lg text-sm font-bold text-gray-700">
+              <span class="px-1 bg-green-400 rounded-full animate-[ping_1.9s_linear_infinite]">P</span>
+              <span class="px-1 bg-green-400 rounded-full animate-[ping_2s_linear_infinite]">O</span>
+              <span class="px-1 bg-green-400 rounded-full animate-[ping_2.1s_linear_infinite]">R</span>
+              <span class="px-1 bg-green-400 rounded-full animate-[ping_2.2s_linear_infinite]">T</span>
+              <span class="px-1 bg-green-400 rounded-full animate-[ping_2.3s_linear_infinite]">F</span>
+              <span class="px-1 bg-green-400 rounded-full animate-[ping_2.4s_linear_infinite]">O</span>
+              <span class="px-1 bg-green-400 rounded-full animate-[ping_2.5s_linear_infinite]">L</span>
+              <span class="px-1 bg-green-400 rounded-full animate-[ping_2.6s_linear_infinite]">I</span>
+              <span class="px-1 bg-green-400 rounded-full animate-[ping_2.7s_linear_infinite]">O</span>
+            </a>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden lg:flex space-x-8">
+            <a href="#about" class="block text-green-400 hover:text-green-400">About</a>
+            <a href="#what-i-do" class="block text-gray-400 hover:text-green-400">What I Do</a>
+            <a href="#professional-journey" class="block text-gray-400 hover:text-green-400">Resume</a>
+            <a href="#certifications" class="block text-gray-400 hover:text-green-400">Certificates</a>
+            <a href="#fun-facts" class="block text-gray-400 hover:text-green-400">Fun Facts</a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="lg:hidden flex items-center">
+            <button id="mobile-menu-button" class="text-green-400 hover:text-green-600 focus:outline-none">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="absolute inset-0 bg-[#111111] bg-opacity-50 z-50 hidden">
+        <div class="fixed inset-y-0 left-0 bg-[#111111] w-64 p-6 transform -translate-x-full transition-transform">
+          <button id="close-menu-button" class="text-green-400 hover:text-green-600 focus:outline-none mb-4">
+          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+          <nav class="space-y-4">
+            <a href="#about" class="block text-green-400 hover:text-green-400">About</a>
+            <a href="#what-i-do" class="block text-gray-400 hover:text-green-400">What I Do</a>
+            <a href="#professional-journey" class="block text-gray-400 hover:text-green-400">Resume</a>
+            <a href="#certifications" class="block text-gray-400 hover:text-green-400">Certificates</a>
+            <a href="#fun-facts" class="block text-gray-400 hover:text-green-400">Fun Facts</a>
+          </nav>
+        </div>
+      </div>
+    </nav>
+
+    <div class="w-full h-full flex flex-col items-center">
+      <!-- Hero Section -->
+      <section class="w-full relative flex items-center flex-col lg:flex-row" id="about">
+        <img class="lg:w-1/2 " src="hi.jpg" alt="port image">
+        <!--  -->
+        <div
+          class="lg:absolute lg:left-[40%] md:left-[30%] lg:w-[55%] lg:p-12 sm:p-6 p-4 flex flex-col justify-center bg-[#222222]">
+          <p class="text-gray-400 text-sm mb-1">Web Developer</p>
+          <h2 class="text-white md:text-5xl text-2xl font-bold mb-4">Patricia Monique Asis</h2>
+          <p class="text-gray-400 text-md mb-6">
+           BSIT student and technical specialist focused on system optimization. I bridge the gap between digital operations and technical systems through CRM management, troubleshooting, and end-to-end digital production.
+          </p>
+          <!-- My expertise lies in Vue, Nuxt, Svelt, Laravel and Nestjs and I thrive on transforming complex challenges into user-friendly solutions. -->
+          <div>
+            <button class="md:px-6 px-4 py-2 text-white font-semibold  outline outline-green-400 rounded-full hover:bg-green-500 transform trasition delay-300">Download CV</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- What I DO -->
+      <section class="md:pt-20 pt-10 md:px-20 px-2" id="what-i-do">
+        <!-- Heading -->
+        <div class="w-fit">
+          <h2 class="text-2xl font-bold text-white pb-2">What I Do</h2>
+          <div class="rounded-t-full border-[1px] border-gray-500 overflow-hidden">
+            <hr class="border-[3px] border-green-400 w-[20%]" />
+          </div>
+        </div>
+
+        <div class="w-full grid lg:grid-cols-2 grid-cols-1 gap-4 mt-8">
+          <!-- 1 -->
+          <div class="flex sm:gap-4 gap-1">
+            <span class="">
+              <ion-icon class="sm:text-5xl text-3xl text-green-400" name="code-slash-outline"></ion-icon>
+              </span>
+
+            <div class="flex flex-col gap-2">
+              <h3 class="text-xl font-semibold text-white">Web Development</h3>
+              <p class="text-gray-400">
+                Crafting responsive and intuitive websites tailored to your unique needs using cutting-edge
+                technologies.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="flex sm:gap-4 gap-2">
+            <span>
+              <ion-icon class="sm:text-5xl text-3xl text-green-400" name="browsers-outline"></ion-icon>
+            </span>
+
+            <div class="flex flex-col gap-2">
+              <h3 class="text-xl font-semibold text-white">UI/UX Design</h3>
+              <p class="text-gray-400">Creating visually appealing and user-centric designs that enhance user
+                experiences and engagement.</p>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="flex sm:gap-4 gap-2">
+            <span>
+              <ion-icon class="sm:text-5xl text-3xl text-green-400" name="archive-outline"></ion-icon>
+            </span>
+
+            <div class="flex flex-col gap-2">
+              <h3 class="text-xl font-semibold text-white">Custom CMS Solutions</h3>
+              <p class="text-gray-400">Building reusable and efficient CMS APIs to simplify website management and
+                scalability.</p>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="flex sm:gap-4 gap-2">
+            <span>
+              <ion-icon class="sm:text-5xl text-3xl text-green-400" name="phone-portrait-outline"></ion-icon>
+            </span>
+            <div class="flex flex-col gap-2">
+              <h3 class="text-xl font-semibold text-white">Mobile App Dev't</h3>
+              <p class="text-gray-400">Designing and developing user-friendly mobile applications for iOS and Android,
+                ensuring seamless performance and user satisfaction.</p>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="flex sm:gap-4 gap-2">
+            <span>
+              <ion-icon class="sm:text-5xl text-3xl text-green-400" name="bag-check-outline"></ion-icon>
+            </span>
+            <div class="flex flex-col gap-2">
+              <h3 class="text-xl font-semibold text-white">E-commerce Development</h3>
+              <p class="text-gray-400">Creating robust platforms to elevate your online business presence.</p>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="flex sm:gap-4 gap-2">
+            <span>
+              <ion-icon class="sm:text-5xl text-3xl text-green-400" name="swap-horizontal-outline"></ion-icon>
+            </span>
+            <div class="flex flex-col gap-2">
+              <h3 class="text-xl font-semibold text-white">API Integration</h3>
+              <p class="text-gray-400">Seamlessly connecting systems to enhance functionality and performance.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Professional Journey -->
+      <section id="professional-journey" class="md:pt-20 pt-10 md:px-20 px-6">
+  <div class="w-fit sm:mb-20 mb-10">
+    <h2 class="text-2xl font-bold text-white pb-2">Professional Journey</h2>
+    <div class="rounded-t-full border-[1px] border-gray-500 overflow-hidden">
+      <hr class="border-[3px] border-green-400 w-[40%]" />
+    </div>
+  </div>
+
+  <div class="grid lg:grid-cols-2 grid-cols-1 gap-8 items-start">
+    
+    <div class="bg-[#1a1a1a] p-8 rounded-2xl border border-gray-800 hover:border-green-400/50 transition-all duration-300 relative group">
+      <div class="flex justify-between items-start mb-4">
+        <div class="flex gap-4 items-center">
+          <div class="bg-green-400 p-3 rounded-xl shadow-lg shadow-green-400/20 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white">Appointment Setter</h3>
+            <p class="text-gray-400">KB Staples</p>
+          </div>
+        </div>
+        <span class="bg-gray-800 text-[10px] px-2 py-1 rounded uppercase text-green-400 font-bold tracking-tighter">Recent</span>
+      </div>
+      <p class="text-green-400 text-sm font-semibold mb-3">December 2024 - March 2025</p>
+      <p class="text-gray-400 text-sm leading-relaxed mb-6">
+        Optimized lead-generation workflows and managed CRM databases to ensure high data integrity and efficient scheduling pipelines.
+      </p>
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 bg-green-400/10 border border-green-400/20 text-green-400 text-[10px] rounded-full font-medium">Data Management</span>
+        <span class="px-3 py-1 bg-green-400/10 border border-green-400/20 text-green-400 text-[10px] rounded-full font-medium">CRM Administration</span>
+      </div>
+    </div>
+
+    <div class="bg-[#1a1a1a] p-8 rounded-2xl border border-gray-800 hover:border-green-400/50 transition-all duration-300 relative group">
+      <div class="flex gap-4 items-center mb-4">
+        <div class="bg-green-400 p-3 rounded-xl shadow-lg shadow-green-400/20 group-hover:scale-110 transition-transform">
+          <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-white">Customer Service</h3>
+          <p class="text-gray-400">CBS (Customer Benefit Services)</p>
+        </div>
+      </div>
+      <p class="text-green-400 text-sm font-semibold mb-3">2023 - 2024</p>
+      <p class="text-gray-400 text-sm leading-relaxed mb-6">
+        Provided high-level technical troubleshooting and conflict resolution while navigating complex internal software systems.
+      </p>
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 bg-green-400/10 border border-green-400/20 text-green-400 text-[10px] rounded-full font-medium">Technical Support</span>
+        <span class="px-3 py-1 bg-green-400/10 border border-green-400/20 text-green-400 text-[10px] rounded-full font-medium">SLA Management</span>
+      </div>
+    </div>
+
+    <div class="bg-[#1a1a1a] p-8 rounded-2xl border border-gray-800 hover:border-green-400/50 transition-all duration-300 relative group">
+      <div class="flex gap-4 items-center mb-4">
+        <div class="bg-green-400 p-3 rounded-xl shadow-lg shadow-green-400/20 group-hover:scale-110 transition-transform">
+          <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-white">Social Media Management</h3>
+          <p class="text-gray-400">Freelancing</p>
+        </div>
+      </div>
+      <p class="text-green-400 text-sm font-semibold mb-3">2021 - 2023</p>
+      <p class="text-gray-400 text-sm leading-relaxed mb-6">
+        Executed end-to-end digital content production utilizing video editing software to drive technical engagement.
+      </p>
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 bg-green-400/10 border border-green-400/20 text-green-400 text-[10px] rounded-full font-medium">Content Strategy</span>
+        <span class="px-3 py-1 bg-green-400/10 border border-green-400/20 text-green-400 text-[10px] rounded-full font-medium">Video Editing</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+      <!-- Certificates -->
+      <section id="certifications" class="md:pt-20 pt-10 md:px-20 px-6">
+  <div class="w-fit sm:mb-20 mb-10">
+    <h2 class="text-2xl font-bold text-white pb-2">Certifications</h2>
+    <div class="rounded-t-full border-[1px] border-gray-500 overflow-hidden">
+      <hr class="border-[3px] border-green-400 w-[40%]" />
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    
+    <div class="group relative overflow-hidden rounded-xl bg-[#1a1a1a] border border-gray-800 hover:border-green-400/50 transition-all duration-300">
+      <div class="aspect-[4/3] overflow-hidden">
+        <img src="sql.png" alt="Certificate Name" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+      </div>
+      <div class="p-4 bg-[#1a1a1a]">
+        <h3 class="text-white font-semibold text-sm">SQL Mastery</h3>
+        <p class="text-green-400 text-[10px] uppercase tracking-wider font-bold mt-1">Verified Certificate</p>
+      </div>
+    </div>
+
+    <div class="group relative overflow-hidden rounded-xl bg-[#1a1a1a] border border-gray-800 hover:border-green-400/50 transition-all duration-300">
+      <div class="aspect-[4/3] overflow-hidden">
+        <img src="php.png" alt="Certificate Name" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+      </div>
+      <div class="p-4 bg-[#1a1a1a]">
+        <h3 class="text-white font-semibold text-sm">PHP Mastery</h3>
+        <p class="text-green-400 text-[10px] uppercase tracking-wider font-bold mt-1">Verified Certificate</p>
+      </div>
+    </div>
+
+    <div class="group relative overflow-hidden rounded-xl bg-[#1a1a1a] border border-gray-800 hover:border-green-400/50 transition-all duration-300">
+      <div class="aspect-[4/3] overflow-hidden">
+        <img src="javascript.png" alt="Certificate Name" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+      </div>
+      <div class="p-4 bg-[#1a1a1a]">
+        <h3 class="text-white font-semibold text-sm">JavaScript Mastery</h3>
+        <p class="text-green-400 text-[10px] uppercase tracking-wider font-bold mt-1">Verified Certificate</p>
+      </div>
+    </div>
+    <div class="group relative overflow-hidden rounded-xl bg-[#1a1a1a] border border-gray-800 hover:border-green-400/50 transition-all duration-300">
+      <div class="aspect-[4/3] overflow-hidden">
+        <img src="html.png" alt="Certificate Name" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+      </div>
+      <div class="p-4 bg-[#1a1a1a]">
+        <h3 class="text-white font-semibold text-sm">HTML Mastery</h3>
+        <p class="text-green-400 text-[10px] uppercase tracking-wider font-bold mt-1">Verified Certificate</p>
+      </div>
+    </div>
+
+    <div class="group relative overflow-hidden rounded-xl bg-[#1a1a1a] border border-gray-800 hover:border-green-400/50 transition-all duration-300">
+      <div class="aspect-[4/3] overflow-hidden">
+        <img src="css.png" alt="Certificate Name" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+      </div>
+      <div class="p-4 bg-[#1a1a1a]">
+        <h3 class="text-white font-semibold text-sm">CSS Mastery</h3>
+        <p class="text-green-400 text-[10px] uppercase tracking-wider font-bold mt-1">Verified Certificate</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- Fun Facts -->
+      <section class="w-full sm:py-20 py-10 md:px-20 px-6" id="fun-facts">
+        <!-- Heading -->
+        <div class="w-fit sm:mb-20 mb-10">
+          <h2 class="text-2xl font-bold text-white pb-2">Fun Facts</h2>
+          <div class="rounded-t-full border-[1px] border-gray-500 overflow-hidden">
+            <hr class="border-[3px] border-green-400 w-[80%]" />
+          </div>
+        </div>
+
+        <div class="w-full grid gap-2 lg:grid-cols-4 sm:grid-cols-2 grid-cols-1">
+          <!-- 1 -->
+          <div
+            class="flex flex-col gap-4 items-center justify-center border border-2 border-gray-400 p-6 rounded-lg text-gray-400">
+            <span class="text-4xl">😁</span>
+            <h3 class="sm:text-xl text-md font-bold text-gray-200">Happy Clients</h3>
+            <span class="sm:text-5xl text-3xl font-semibold">10<sup>+</sup></span>
+          </div>
+          <!-- 2 -->
+          <div
+            class="flex flex-col gap-4 items-center justify-center border border-2 border-gray-400 p-6 rounded-lg text-gray-400">
+            <span class="text-4xl">😬</span>
+            <h3 class="sm:text-xl text-md font-bold text-gray-200">Working Hours</h3>
+            <span class="sm:text-5xl text-3xl font-semibold">2,080<sup>+</sup></span>
+          </div>
+          <!-- 3 -->
+          <div
+            class="flex flex-col gap-4 items-center justify-center border border-2 border-gray-400 p-6 rounded-lg text-gray-400">
+            <span class="text-4xl">👋</span>
+            <h3 class="sm:text-xl text-md font-bold text-gray-200">Certification</h3>
+            <span class="sm:text-5xl text-3xl font-semibold">5<sup>+</sup></span>
+          </div>
+          <!-- 4 -->
+          <div
+            class="flex flex-col gap-4 items-center justify-center border border-2 border-gray-400 p-6 rounded-lg text-gray-400">
+            <span class="text-4xl">😲</span>
+            <h3 class="sm:text-xl text-md  font-bold text-gray-200">Portfolios</h3>
+            <span class="sm:text-5xl text-3xl font-semibold">10<sup>+</sup></span>
+          </div>
+        </div>
+      </section>
+
+      <footer class="w-full mt-10 border-t-2 pt-4 pb-8 border-gray-500">
+        <div class="flex sm:flex-row flex-col sm:justify-between items-center md:px-20 px-4">
+          <div class="flex gap-4 items-center sm:text-xl text-sm text-gray-500">
+            <a href="" class="hover:text-green-400">facebook</a>
+            <a href="" class="hover:text-green-400">instagram</a>
+            <a href="" class="hover:text-green-400">Linkedin</a>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+</div>
+<!--  -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenuButton = document.getElementById('close-menu-button');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.querySelector('div').classList.remove('-translate-x-full');
+    });
+
+    closeMenuButton.addEventListener('click', () => {
+      mobileMenu.querySelector('div').classList.add('-translate-x-full');
+      setTimeout(() => mobileMenu.classList.add('hidden'), 300);
+    });
+
+    mobileMenu.addEventListener('click', (e) => {
+      if (e.target === mobileMenu) {
+        closeMenuButton.click();
+      }
+    });
+
+    const scrollBtn = document.getElementById("scrollToTop");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+        scrollBtn.classList.remove("opacity-0", "translate-y-10");
+        scrollBtn.classList.add("opacity-100", "translate-y-0");
+    } else {
+        scrollBtn.classList.remove("opacity-100", "translate-y-0");
+        scrollBtn.classList.add("opacity-0", "translate-y-10");
+    }
+});
+
+scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+</script>
